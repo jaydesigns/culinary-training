@@ -9,27 +9,46 @@
         <link href="lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
         <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
     </head>
-    <body style="background-color: #e9e9e9;">
+    <body style="background-color: #e9e9e9;"><span class="fixed overflow-hidden right-5 top-5 z-20" id="navBtnContainer"><span class="absolute z-20" id="navOpenBtn"><span id="upperLine"></span><span id="lowerLine"></span></span><span class="absolute z-20" id="navCloseBtn"><span id="x-one"></span><span id="x-two"></span></span></span>
+        <nav class="fixed inset-0 p-10 z-20" id="navigationSection">
+            <div class="flex flex-col">
+                <a href="">Concessions</a>
+                <a href="">Kitchen</a>
+                <a href="">Luau</a>
+                <a href="">Pounders</a>
+            </div>
+            <div class="flex flex-col">
+                <a href="">About</a>
+                <a href="">Polynesian Cultural Center</a>
+            </div>
+        </nav>
         <section class="h-screen overflow-hidden relative">
             <div class="h-screen overflow-hidden relative w-full">
-                <video src="lib/assets/vid/welcome-video.mp4" class="absolute bg-black h-full welcome-vid" preload="auto" muted="true" loop="true" autoplay="true">Your browser doesn't support HTML5 video tag.</video>
+                <video src="lib/assets/vid/welcome-video.mp4" class="absolute bg-black h-full w-full welcome-vid" preload="auto" muted="true" loop="true" autoplay="true">Your browser doesn't support HTML5 video tag.</video>
                 <a href="#section-02" id="afterVidBtn" class="mb-20 p-2">CONTINUE</a>
             </div>
             <div class="absolute h-screen inset-0 overflow-hidden p-6 w-full z-10" id="preloaderDiv">
                 <div class="absolute bottom-0 inset-x-0 m-6">
-                    <h1 class="heroTitle text-white"><span class="inline-block overflow-hidden relative textBox"><span class="textSpan" data-pg-ia='{"l":[{"name":"introWelcome","trg":"load","a":{"l":[{"t":"$.textSpan","l":[{"t":"tween","p":0,"d":1,"s":0.15,"l":{"top":"0em"},"e":"Cubic.easeInOut"}]}]}}]}'>Aloha,&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">E</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">Komo&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">Mai!</span></span>   </h1>
-                    <button class="bg-black mb-10 mt-20 text-white" name="startJourney" type="button" id="introStart" data-pg-ia='{"l":[{"name":"heroFadeOut","trg":"mousedown","a":{"l":[{"t":"$#preloaderDiv","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}},{"t":"tween","p":0.5,"d":0.5,"l":{"display":"none"}}]}]}}]}'>START YOUR TRAINING HERE</button>
+                    <h1 class="font-serif heroTitle text-white"><span class="inline-block overflow-hidden relative textBox"><span class="textSpan" data-pg-ia='{"l":[{"name":"introWelcome","trg":"load","a":{"l":[{"t":"$.textSpan","l":[{"t":"tween","p":0,"d":3,"s":0.15,"l":{"top":"0em"},"e":"Cubic.easeInOut"}]}]}}]}'>Aloha,&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">E</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">Komo&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">Mai!</span></span> </h1>
+                    <button class="bg-black mb-10 mt-20 px-8 py-5 rounded-sm text-white" name="startJourney" type="button" id="introStart" data-pg-ia='{"l":[{"name":"heroFadeOut","trg":"mousedown","a":{"l":[{"t":"$#preloaderDiv","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}},{"t":"tween","p":0.5,"d":0.5,"l":{"display":"none"}}]}]}}]}'>Start your training here</button>
                 </div>
             </div>
         </section>
         <section class="h-screen overflow-hidden" id="section-02">
-            <div class="p-6">
-                <h1 class="font-semibold text-6xl">World-class food and service</h1>
+            <div class="h-screen p-6">
+                <div class="h-1/3 mt-32 overflow-hidden relative">
+                    <img src="https://pinegrow.com/placeholders/img15.jpg" class="scale-150 transform"/>
+                </div>
+                <h2 class="font-semibold sectionTitle"><span>World-class</span> <span>food </span><span>and </span><span>service</span></h2>
+                <p>This is the Culinary Services Division&apos;s mission and vision. This training is designed to help you learn how to become world-class in each of your position.</p>
+                <div>
+                    <button>Click me!</button>
+                </div>
             </div>
         </section>
         <section class="h-screen overflow-hidden">
             <div class="p-6">
-                <h1 class="font-semibold text-6xl">Key Results</h1>
+                <h2 class="font-semibold sectionTitle"><span>Key </span><span>Results</span></h2>
             </div>
         </section>
         <section class="cardContainer">
