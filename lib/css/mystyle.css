@@ -151,7 +151,7 @@ button {
 }
 
 .textBox {
-    height: 20vw;
+    height: 1em;
 }
 
 .textSpan {
@@ -181,6 +181,7 @@ button {
 
 .sectionTitle {
     font-size: 11vw;
+    line-height: 1.1em;
 }
 
 #navOpenBtn {
@@ -188,6 +189,7 @@ button {
     height: 45px;
     border-radius: 35px;
     background-color: #e29e12;
+    cursor: pointer;
 }
 
 #upperLine {
@@ -217,9 +219,11 @@ button {
     height: 45px;
     border-radius: 35px;
     background-color: #e29e12;
+    cursor: pointer;
 }
 
 #navigationSection {
+    background-color: #fefae4;
     display: none;
 }
 
@@ -246,6 +250,51 @@ button {
 }
 
 #navBtnContainer {
+    width: 90px;
+    height: 45px;
+    transform: translateX(0);
+}
+
+@media (min-width:768px) {
+    .sectionTitle {
+        font-size: 6vw;
+    }
+
+    .heroTitle {
+        font-size: 10vw;
+    }
+}
+
+#navBox {
     width: 45px;
     height: 45px;
+    overflow: hidden;
+    border-radius: 45px;
+}
+
+.sectionTitleSpan {
+    position: relative;
+    top: 1.5em;
+}
+
+.galleryBox {
+}
+
+.keyResultCard {
+    padding: 30px;
+    height: 70vw;
+    margin-right: 30px;
+    width: 50vw;
+    margin-bottom: 30px;
+}
+
+@media (min-width:1280px) {
+    .keyResultCard {
+        width: 27vw;
+        height: 33vw;
+    }
+}
+
+.deptLinks {
+    font-size: 4rem;
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> 
+        <title>New page</title>         
+        <script src="https://cdn.tailwindcss.com/"></script>         
+        <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
+        <link href="https://rsms.me/inter/inter.css" rel="stylesheet" type="text/css"/>
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+    </head>     
+    <body>
+        <section class="h-screen overflow-hidden relative">
+            <div class="h-screen overflow-hidden relative w-full">
+                <video src="lib/assets/vid/welcome-video.mp4" class="absolute bg-black h-full w-full welcome-vid" preload="auto" muted="true" loop="true" autoplay="true">Your browser doesn't support HTML5 video tag.</video>
+                <a href="#section-02" id="afterVidBtn" class="mb-20 p-2">CONTINUE</a>
+            </div>
+            <div class="absolute h-screen inset-0 overflow-hidden p-6 w-full z-10" id="preloaderDiv">
+                <div class="absolute bottom-0 inset-x-0 m-6">
+                    <h1 class="font-serif heroTitle text-white"><span class="inline-block overflow-hidden relative textBox"><span class="textSpan" data-pg-ia='{"l":[{"name":"introWelcome","trg":"load","a":{"l":[{"t":"$.textSpan","l":[{"t":"tween","p":1.2,"d":3,"s":0.15,"l":{"top":"0em"},"e":"Cubic.easeInOut"}]}]}}]}'>Aloha,&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">E&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">Komo&nbsp;</span></span><span class="inline-block overflow-hidden relative textBox"><span class="textSpan">Mai!</span></span> </h1>
+                    <button class="bg-black mb-10 mt-20 px-8 py-5 rounded-sm text-white" name="startJourney" type="button" id="introStart" data-pg-ia='{"l":[{"name":"heroFadeOut","trg":"mousedown","a":{"l":[{"t":"$#preloaderDiv","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1}},{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}},{"t":"tween","p":0.5,"d":0.5,"l":{"display":"none"}}]}]}}]}'>Start your training here</button>
+                </div>
+            </div>
+        </section>
+        <section class="cardContainer">
+            <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="taskItemCard" data-pgc-define-name="Task Item Card" data-pgc-section="Card Components" data-pgc-edit="cardTitle" data-pgc-edit-types="taskItemCard">
+                <div class="flex p-6">
+                    <div class="flex-1 p-2">
+                        <img src="https://pinegrow.com/placeholders/img19.jpg"/>
+                    </div>
+                    <div class="flex-1 p-2">
+                        <h1 class="font-bold mb-0 text-lg">Task 1</h1>
+                        <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                        <button id="startTrVid" class="mb-0">Watch Video</button>
+                    </div>
+                    <div class="p-2">
+                        <label class="checkmarkContainer">
+                            <input type="checkbox" class="checkBox uaCheckBox"/>
+                            <span class="checkMark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-3xl mx-auto taskListCard" data-pgc="taskItemCard" data-pgc-field="cardTitle" data-pgc-no-update>
+                <div class="flex p-6">
+                    <div class="flex-1 p-2">
+                        <img src="https://pinegrow.com/placeholders/img19.jpg"/>
+                    </div>
+                    <div class="flex-1 p-2">
+                        <h1 class="font-bold mb-0 text-lg">Assesment</h1>
+                        <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                        <button class="expandButton mb-0">+</button>
+                    </div>
+                    <div class="p-2">
+                        <label class="checkmarkContainer">
+                            <input type="checkbox" class="adCheckBox checkBox"/><span class="checkMark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="assessmentDiv p-6">
+                    <div>
+                        <p>Is this a question to assess what they&apos;ve learned in their training?</p>
+                    </div>
+                    <div>
+                        <button class="circleButton" value="1" type="button">True</button>
+                        <button class="circleButton" value="0" type="button">False</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-3xl mx-auto taskListCard" data-pgc="taskItemCard" data-pgc-field="cardTitle" data-pgc-no-update>
+                <div class="flex p-6">
+                    <div class="flex-1 p-2">
+                        <img src="https://pinegrow.com/placeholders/img19.jpg"/>
+                    </div>
+                    <div class="flex-1 p-2">
+                        <h1 class="font-bold mb-0 text-lg">Assesment</h1>
+                        <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                        <button class="expandButton mb-0">+</button>
+                    </div>
+                    <div class="p-2">
+                        <label class="checkmarkContainer">
+                            <input type="checkbox" class="adCheckBox checkBox"/><span class="checkMark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="assessmentDiv p-6">
+                    <div>
+                        <p>Is this a question to assess what they&apos;ve learned in their training?</p>
+                    </div>
+                    <div>
+                        <button class="circleButton" value="1" type="button">True</button>
+                        <button class="circleButton" value="0" type="button">False</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="taskItemCard" data-pgc-field="cardTitle" data-pgc-no-update>
+                <div class="flex p-6">
+                    <div class="flex-1 p-2">
+                        <img src="https://pinegrow.com/placeholders/img19.jpg"/>
+                    </div>
+                    <div class="flex-1 p-2">
+                        <h1 class="font-bold text-lg">Task 1</h1>
+                        <p class="text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                    </div>
+                    <div class="p-2">
+                        <label class="checkmarkContainer">
+                            <input type="checkbox" class="adCheckBox checkBox uaCheckBox"/><span class="checkMark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-black fixed h-screen top-0 trainingVideoContainer w-full z-10">
+            <button id="trVidClose">CLOSE</button>
+            <video src="lib/assets/vid/pexels-anastasia-ilinamakarova-10720212.mp4" controls preload="auto" id="training-video" class="h-full m-auto">Your browser doesn't support HTML5 video tag.</video>
+        </div>
+        <div class="fixed h-screen inset-0 modalBackground w-full z-10">
+            <div class="-translate-y-1/2 h-1/3 m-auto modal p-6 relative top-1/2 transform w-1/2">
+                <p class="mb-6 modalMessage text-white"></p>
+                <button class="modalButton">Understood</button>
+            </div>
+        </div>
+        <script src="/pgia/lib/pgia.js"></script>
+        <script src="/lib/js/jquery-min.js"></script>
+        <script src="/lib/js/app.js"></script>         
+    </body>     
+</html>
