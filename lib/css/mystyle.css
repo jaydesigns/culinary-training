@@ -1,5 +1,35 @@
+:root {
+    --green: #868132;
+    --lightgreen: #ACA563;
+    --orange: #EAA122;
+    --redorange: #D27328;
+    --ocean: #006872;
+    --beach: #31778A;
+    --surf: #3AAE99;
+    --lightskin: #E7CAA3;
+    --darktone: #DAB383;
+    --offwhite: #fefae4;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'NT Wagner';
+    src: url('../fonts/nt_wagner-webfont.woff2') format('woff2'),
+         url('../fonts/nt_wagner-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "NT Wagner";
 }
 
 .checkmarkContainer {
@@ -160,42 +190,38 @@ button {
 }
 
 #preloaderDiv {
-    background-color: rgba(0, 0, 0, 0.22);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: rgba(134, 129, 50, 0.92);
 }
 
 #afterVidBtn {
     color: #ffffff;
     position: absolute;
-    z-index: 11;
     font-size: 2rem;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #1d90c6;
-    display: none;
-    opacity: 0;
-    transition: all 0.5 cubic-bezier(0.16, 0.48, 0.64, 0.88);
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 31;
 }
 
 .sectionTitle {
-    font-size: 11vw;
+    font-size: 10vw;
     line-height: 1.1em;
+    color: #ffffff;
 }
 
 #navOpenBtn {
     width: 45px;
     height: 45px;
     border-radius: 35px;
-    background-color: #e29e12;
+    background-color: var(--orange);
     cursor: pointer;
 }
 
 #upperLine {
     width: 20px;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
     z-index: 30;
     top: 35%;
@@ -206,7 +232,7 @@ button {
 #lowerLine {
     width: 20px;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
     z-index: 30;
     top: 60%;
@@ -218,7 +244,7 @@ button {
     width: 45px;
     height: 45px;
     border-radius: 35px;
-    background-color: #e29e12;
+    background-color: var(--orange);
     cursor: pointer;
 }
 
@@ -234,7 +260,7 @@ button {
     left: 50%;
     width: 20px;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -245,7 +271,7 @@ button {
     left: 50%;
     width: 20px;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
     transform: translate(-50%, -50%) rotate(315deg);
 }
 
@@ -257,7 +283,7 @@ button {
 
 @media (min-width:768px) {
     .sectionTitle {
-        font-size: 6vw;
+        font-size: 4.5vw;
     }
 
     .heroTitle {
@@ -283,18 +309,173 @@ button {
 .keyResultCard {
     padding: 30px;
     height: 70vw;
-    margin-right: 30px;
+    margin-right: 40px;
     width: 50vw;
     margin-bottom: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 @media (min-width:1280px) {
     .keyResultCard {
-        width: 27vw;
+        width: 23vw;
         height: 33vw;
     }
 }
 
 .deptLinks {
-    font-size: 4rem;
+    font-size: 12vw;
+    line-height: 1em;
+    margin-bottom: 20px;
+    font-family: NT Wagner;
+}
+
+#section-02 {
+    background-color: var(--orange);
+}
+
+#section-03 {
+    background-color: var(--ocean);
+}
+
+@media (min-width:768px) {
+    .deptLinks {
+        font-size: 6vw;
+    }
+}
+
+#tapToContinue {
+    position: fixed;
+    z-index: 30;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#tapToContinue > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#rotateTxt {
+    position: absolute;
+    left: -21px;
+    top: -15px;
+    animation-name: rotateSVG;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    right: 5%;
+    position: absolute;
+}
+
+@keyframes rotateSVG {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+p {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    font-size: 1.3em;
+}
+
+#culturalBeliefs {
+    background: var(--redorange);
+}
+
+.downArrow {
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+.downArrow > a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.galleryContainer::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+.galleryContainer::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    border: solid 1px #fff;
+}
+
+/* Handle */
+.galleryContainer::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.galleryContainer::-webkit-scrollbar-thumb:hover {
+    background: #c2c2c2;
+}
+
+.culturalBelief {
+    font-family: NT Wagner;
+    color: #fff;
+    font-size: 6.7vw;
+    line-height: 1em;
+}
+
+.choices {
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 5.5vw;
+    font-family: 'League Spartan', sans-serif;
+}
+
+@media (min-width:768px) {
+    .choices {
+        font-size: 2vw;
+    }
+
+    .culturalBelief {
+        font-size: 3.9vw;
+    }
+}
+
+#departmentSection {
+    background-color: var(--lightskin);
+}
+
+.deptCard {
+    width: 40vw;
+    height: 50vw;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: NT Wagner;
+    font-size: 5vw;
+}
+
+@media (min-width:768px) {
+    .deptCard {
+        height: 30vw;
+        width: 21vw;
+        font-size: 3.1vw;
+    }
 }
