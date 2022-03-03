@@ -10,20 +10,15 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan&display=swap"/>
     </head>
     <body>
-        <nav class="fixed inset-0 pl-10 pr-6 py-10 z-20" id="navigationSection">
-            <div class="flex flex-col mt-20 text-right"><span>Culinary Services</span>
+        <nav class="fixed inset-0 navigationSection pl-10 pr-6 py-10 z-20" data-pgc="ct.navigation">
+            <div class="flex flex-col mt-20 text-right">
+                <a href="">Culinary Services</a>
             </div>
-            <div class="flex flex-col mt-14 text-right">
-                <a href="dept/concessions.html" class="deptLinks">Concessions</a>
-                <a href="" class="deptLinks">Kitchen</a>
-                <a href="" class="deptLinks">Luau</a>
-                <a href="" class="deptLinks">Pounders</a>
+            <div class="flex flex-col mt-14 text-right"><a href="dept/concessions.html" class="deptLinks">Concessions</a><a href="dept/kitchen.html" class="deptLinks">Kitchen</a><a href="dept/luau.html" class="deptLinks">Luau</a><a href="dept/pounders.html" class="deptLinks">Pounders</a>
             </div>
-            <div class="flex flex-col mt-14 text-right">
-                <a href="">About</a>
-                <a href="">Polynesian Cultural Center</a>
+            <div class="flex flex-col mt-14 text-right"><a href="">About</a><a href="https://polynesia.com">Polynesian Cultural Center</a>
             </div>
-        </nav><span class="fixed right-6 top-10 z-20" id="navBox"><span class="absolute flex overflow-hidden z-20" id="navBtnContainer"><span class="inline-block relative z-20" id="navOpenBtn" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$#navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$#navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span id="upperLine"></span><span id="lowerLine"></span></span><span class="inline-block relative z-20" id="navCloseBtn" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$#navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span id="x-one"></span><span id="x-two"></span></span></span></span>
+        </nav><span class="fixed navBox right-6 top-10 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
         <section class="h-screen overflow-hidden relative">
             <div class="h-screen overflow-hidden relative w-full">
                 <video src="lib/assets/vid/welcome-video.mp4" class="absolute bg-black h-full w-full welcome-vid" preload="auto" muted="true" autoplay="true">Your browser doesn't support HTML5 video tag.</video>
@@ -82,8 +77,8 @@
                     <img src="https://pinegrow.com/placeholders/img15.jpg" class="scale-150 transform"/>
                 </div>
                 <div class="xl:pl-10 xl:pt-32">
-                    <h2 class="font-semibold sectionTitle" data-pg-ia-scene='{"l":[{"name":"setionTitleSlideUp","a":{"l":[{"t":"span","l":[{"t":"tween","p":0,"d":2,"s":0.05,"l":{"top":0},"e":"Power4.easeInOut"}]}]},"p":"time"}],"s":"onCenter"}'><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">World-class&nbsp;</span></span><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">food&nbsp;</span></span><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">and&nbsp;</span></span><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">service.</span></span> </h2>
-                    <p class="text-white">The Polynesian Cultural Center is awarded as the top spot to visit in Hawaii. Thus, the Culinary Services Division of the Polynesian Cultural Center aims to offer only the best of both Polynesian cuisine and Pacific hospitality.</p>
+                    <h2 class="sectionTitle" data-pg-ia-scene='{"l":[{"name":"setionTitleSlideUp","a":{"l":[{"t":"span","l":[{"t":"tween","p":0,"d":2,"s":0.05,"l":{"top":0},"e":"Power4.easeInOut"}]}]},"p":"time"}],"s":"onCenter"}'><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">World-class&nbsp;</span></span><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">food&nbsp;</span></span><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">and&nbsp;</span></span><span class="inline-block overflow-hidden relative"><span class="sectionTitleSpan">service.</span></span> </h2>
+                    <p class="text-white">The Polynesian Cultural Center is awarded as the top spot to visit in Hawaii. Thus, the Culinary Services Division of the PCC aims to offer only the best of both Polynesian cuisine and Pacific hospitality.</p>
                     <div class="mt-10">
                         <button class="downArrow">
                             <a href="#culturalBeliefs"></a> 
@@ -127,16 +122,16 @@
         </section>
         <section class="h-screen overflow-hidden p-6 xl:flex" id="section-03">
             <div class="mb-14 xl:mt-32 xl:w-full">
-                <p class="mt-20 text-white">We strive to achieve 3 key results in the workplace. Guess the key results from the following:</p>
-                <h2 class="mt-10 sectionTitle">3 Key Results</h2>
+                <p class="mt-20">We strive to achieve 3 key results in the workplace. Guess the key results from the following:</p>
+                <h2 class="mt-10 sectionTitle text-black">3 Key Results</h2>
                 <div class="xl:flex" id="keyResultsChoices">
                     <div class="xl:mr-10 xl:w-1/2">
-                        <button class="choices text-white" data-value-key="correct">Enhance Employee Experience</button>
-                        <button class="choices text-white" data-value-key="correct">Exceed Guest Expectations</button>
+                        <button class="choices" data-value-key="correct">Enhance Employee Experience</button>
+                        <button class="choices" data-value-key="correct">Exceed Guest Expectations</button>
                     </div>
                     <div class="xl:w-1/2">
-                        <button class="choices text-white" data-value-key="wrong">Teach guests about surfing techniques</button>
-                        <button class="choices text-white" data-value-key="correct">Improve Financial Results</button>
+                        <button class="choices" data-value-key="wrong">Teach guests about surfing techniques</button>
+                        <button class="choices" data-value-key="correct">Improve Financial Results</button>
                     </div>
                 </div>
             </div>
@@ -144,10 +139,10 @@
         <section class="h-screen p-6" id="departmentSection">
             <div>
                 <div>
-                    <h2 class="sectionTitle">Departments</h2>
+                    <h2 class="sectionTitle text-black">Departments</h2>
                 </div>
                 <div class="xl:flex">
-                    <div class="flex justify-between mt-10 xl:mr-8 xl:w-1/2"><a href="" class="deptCard inline-block text-white" style="background-color: var(--ocean);">Concessions</a><a href="" class="deptCard inline-block text-white" style="background-color: var(--green);">Kitchen</a>
+                    <div class="flex justify-between mt-10 xl:mr-8 xl:w-1/2"><a href="dept/concessions.html" class="deptCard inline-block text-white" style="background-color: var(--ocean);">Concessions</a><a href="" class="deptCard inline-block text-white" style="background-color: var(--green);">Kitchen</a>
                     </div>
                     <div class="flex justify-between mt-10 xl:mr-8 xl:w-1/2"><a href="" class="deptCard inline-block text-white" style="background-color: var(--orange);">Luau</a><a href="" class="deptCard inline-block" style="background-color: var(--offwhite);">Pounders</a>
                     </div>
