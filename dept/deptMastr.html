@@ -3,31 +3,71 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title>Department Master</title>
+        <title data-pgc-edit="ct.deptHeadTag">Department Master</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"/>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
         <link href="../lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <nav class="fixed inset-0 navigationSection pl-10 pr-6 py-10 z-20" data-pgc-define="ct.navigation" data-pgc-define-name="Navigation" data-pgc-section="UI Components">
-            <div class="flex flex-col mt-20 text-right">
-                <a href="../index.html">Culinary Services</a>
+            <div class="flex flex-col mt-20 text-right"><a href="../index.html">Culinary Services</a>
             </div>
-            <div class="flex flex-col mt-14 text-right"><a href="concessions.html" class="deptLinks">Concessions</a><a href="kitchen.html" class="deptLinks">Kitchen</a><a href="luau.html" class="deptLinks">Luau</a><a href="pounders.html" class="deptLinks">Pounders</a>
+            <div class="flex flex-col mt-14 text-right">
+                <a href="concessions.html" class="deptLinks">Concessions</a>
+                <a href="kitchen.html" class="deptLinks">Kitchen</a>
+                <a href="luau.html" class="deptLinks">Luau</a>
+                <a href="pounders.html" class="deptLinks">Pounders</a>
             </div>
-            <div class="flex flex-col mt-14 text-right"><a href="">About</a><a href="https://polynesia.com">Polynesian Cultural Center</a>
+            <div class="flex flex-col mt-14 text-right">
+                <a href="">About</a>
+                <a href="https://polynesia.com">Polynesian Cultural Center</a>
             </div>
-        </nav><span class="fixed navBox right-6 top-10 z-20" data-pgc-define="ct.nav-button" data-pgc-define-name="Navigation Button" data-pgc-section="UI Components"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
+        </nav>
+        <span class="fixed navBox right-6 top-10 z-20" data-pgc-define="ct.nav-button" data-pgc-define-name="Navigation Button" data-pgc-section="UI Components"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
         <section class="h-screen p-6">
             <div class="mt-20">
                 <h2 class="sectionTitle" style="color: var(--ocean);" data-pgc-edit="deptName">Department Name</h2>
             </div>
-            <div class="flex flex-wrap mt-6" data-pgc-edit="ct.positionContainer">
-                <div class="inline-block mb-6 positionCard" data-pgc-define="ct.positionCard" data-pgc-define-name="Position Card" data-pgc-define-map-urls="false" data-pgc-section="Card Components">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-edit="ct.positionImg" data-pgc-edit-bckimage>
-                        <a href="" class="absolute inset-0 z-10" data-pgc-edit="ct.positionLink[href]"></a>
+            <div class="mt-6 positionContainer" data-pgc-edit="ct.positionContainer">
+                <div class="inline-block positionCard" data-pgc-define="ct.positionCard" data-pgc-define-name="Position Card" data-pgc-define-map-urls="false" data-pgc-section="Card Components">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-edit="ct.positionImg" data-pgc-edit-bckimage><a href="" class="absolute inset-0 z-10" data-pgc-edit="ct.positionLink[href]"></a>
+                    </div><span data-pgc-edit="ct.positionName">Position Title</span>
+                </div>
+                <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg">
+                        <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
                     </div>
-                    <span data-pgc-edit="ct.positionName">Position Title</span>
+                    <span data-pgc-field="ct.positionName">Position Title</span>
+                </div>
+                <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg">
+                        <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                    </div>
+                    <span data-pgc-field="ct.positionName">Position Title</span>
+                </div>
+                <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg">
+                        <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                    </div>
+                    <span data-pgc-field="ct.positionName">Position Title</span>
+                </div>
+                <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg">
+                        <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                    </div>
+                    <span data-pgc-field="ct.positionName">Position Title</span>
+                </div>
+                <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg">
+                        <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                    </div>
+                    <span data-pgc-field="ct.positionName">Position Title</span>
+                </div>
+                <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg">
+                        <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                    </div>
+                    <span data-pgc-field="ct.positionName">Position Title</span>
                 </div>
             </div>
         </section>

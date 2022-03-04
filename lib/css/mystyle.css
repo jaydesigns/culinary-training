@@ -514,9 +514,8 @@ p {
 }
 
 .positionCard {
-    height: 200px;
-    width: 102px;
-    margin-right: 10px;
+    height: 40vw;
+    width: 100%;
 }
 
 @media (min-width:768px) {
@@ -529,4 +528,36 @@ p {
     background-color: var(--surf);
     background-size: cover;
     background-position: center center;
+}
+
+@media (min-width:1280px) {
+    .positionCard {
+        height: 20vw;
+    }
+}
+
+.positionContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+@media (min-width:768px) {
+    .positionContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1280px) {
+    .positionContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+#leaf01 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
