@@ -335,9 +335,9 @@ button {
 
 .keyResultCard {
     padding: 30px;
-    height: 70vw;
+    height: 100vw;
     margin-right: 40px;
-    width: 50vw;
+    width: 65vw;
     margin-bottom: 30px;
     border-radius: 10px;
     background-size: cover;
@@ -381,9 +381,10 @@ button {
     z-index: 30;
     width: 100px;
     height: 100px;
-    bottom: 0;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
 }
 
 #tapToContinue > img {
@@ -423,7 +424,7 @@ p {
 }
 
 #culturalBeliefs {
-    background: var(--redorange);
+    background: var(--ocean);
 }
 
 .downArrow {
@@ -446,9 +447,8 @@ p {
 
 /* Track */
 .galleryContainer::-webkit-scrollbar-track {
-    background: transparent;
+    background: rgb(0,0,0,0.1);
     border-radius: 10px;
-    border: solid 1px #fff;
 }
 
 /* Handle */
@@ -492,7 +492,7 @@ p {
 }
 
 #departmentSection {
-    background-color: var(--lightskin);
+    background-color: var(--offwhite);
 }
 
 .deptCard {
@@ -556,8 +556,17 @@ p {
 
 #leaf01 {
     position: absolute;
-    left: 0;
+    left: -30%;
     top: 0;
-    bottom: 0;
-    right: 0;
+    right: 20%;
+}
+
+.sectionWrapper {
+    background-color: var(--offwhite);
+}
+
+#leaf02 {
+    position: absolute;
+    bottom: -30%;
+    right: -40%;
 }
