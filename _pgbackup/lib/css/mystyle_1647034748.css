@@ -576,16 +576,6 @@ p {
 }
 
 .leaf02 {
-    width: 110vw;
-    height: 130vw;
-}
-
-#leaf-03 {
-    position: absolute;
-    right: 0;
-}
-
-.leaf03 {
     width: 100vw;
     height: 100vw;
 }

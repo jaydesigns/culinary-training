@@ -556,8 +556,8 @@ p {
 
 #leaf01 {
     position: absolute;
-    top: 5%;
-    left: -100%;
+    top: 20%;
+    left: -10%;
 }
 
 .sectionWrapper {
@@ -567,25 +567,5 @@ p {
 #leaf02 {
     position: absolute;
     bottom: -100%;
-    right: -40%;
-}
-
-.leaf01 {
-    width: 100vw;
-    height: 100vw;
-}
-
-.leaf02 {
-    width: 110vw;
-    height: 130vw;
-}
-
-#leaf-03 {
-    position: absolute;
     right: 0;
-}
-
-.leaf03 {
-    width: 100vw;
-    height: 100vw;
 }

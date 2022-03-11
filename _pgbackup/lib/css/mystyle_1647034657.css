@@ -567,25 +567,10 @@ p {
 #leaf02 {
     position: absolute;
     bottom: -100%;
-    right: -40%;
-}
-
-.leaf01 {
-    width: 100vw;
-    height: 100vw;
-}
-
-.leaf02 {
-    width: 110vw;
-    height: 130vw;
-}
-
-#leaf-03 {
-    position: absolute;
     right: 0;
 }
 
-.leaf03 {
+.leaf01 {
     width: 100vw;
     height: 100vw;
 }
