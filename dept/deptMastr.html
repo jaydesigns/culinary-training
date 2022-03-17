@@ -18,43 +18,59 @@
             <div class="flex flex-col mt-14 text-right"><a href="">About</a><a href="https://polynesia.com">Polynesian Cultural Center</a>
             </div>
         </nav><span class="fixed navBox right-6 top-10 z-20" data-pgc-define="ct.nav-button" data-pgc-define-name="Navigation Button" data-pgc-section="UI Components"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
-        <section class="h-screen p-6 sectionWrapper">
-            <div class="mt-20">
-                <h2 class="sectionTitle" style="color: var(--ocean);" data-pgc-edit="deptName">Department Name</h2>
-            </div>
-            <div class="mt-6 positionContainer" data-pgc-edit="ct.positionContainer">
-                <div class="inline-block positionCard" data-pgc-define="ct.positionCard" data-pgc-define-name="Position Card" data-pgc-define-map-urls="false" data-pgc-section="Card Components">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-edit="ct.positionImg" data-pgc-edit-bckimage>
-                        <a href="" class="absolute inset-0 z-10" data-pgc-edit="ct.positionLink[href]"></a>
+        <div class="xl:grid xl:grid-cols-3">
+            <section class="p-6 sectionWrapper xl:col-span-1 xl:h-screen xl:p-12">
+                <div class="mt-20">
+                    <div class="flex flex-wrap">
+                        <a href="" class="deptAnchor">Departments</a><a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Departments</a>
                     </div>
-                    <span data-pgc-edit="ct.positionName">Position Title</span>
+                    <div class="mt-6">
+                        <div class="dept-page-icon pg-empty-placeholder" data-pgc-edit="ct.deptHeroIcon[style]"></div>
+                        <div class="mt-6">
+                            <h1 class="departmentName" data-pgc-edit="ct.deptTitle">Department Name</h1>
+                            <p class="mt-6 text-justify">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                    </div><span data-pgc-field="ct.positionName">Position Title</span>
+            </section>
+            <section class="p-6 sectionWrapper xl:col-span-2 xl:h-screen xl:p-12">
+                <div>
+                    <h6 class="font-semibold mt-6 py-2 xl:mt-20">Positions</h6>
                 </div>
-                <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                    </div><span data-pgc-field="ct.positionName">Position Title</span>
+                <div class="mt-6 positionContainer xl:mt-10" data-pgc-edit="ct.positionContainer">
+                    <div class="inline-block positionCard" data-pgc-define="ct.positionCard" data-pgc-define-name="Position Card" data-pgc-define-map-urls="false" data-pgc-section="Card Components">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-edit="ct.positionImg" data-pgc-edit-bckimage>
+                            <a href="" class="absolute inset-0 z-10" data-pgc-edit="ct.positionLink[href]"></a>
+                        </div>
+                        <span data-pgc-edit="ct.positionName">Position Title</span>
+                    </div>
+                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                        </div><span data-pgc-field="ct.positionName">Position Title</span>
+                    </div>
+                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                        </div><span data-pgc-field="ct.positionName">Position Title</span>
+                    </div>
+                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                        </div><span data-pgc-field="ct.positionName">Position Title</span>
+                    </div>
+                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                        </div><span data-pgc-field="ct.positionName">Position Title</span>
+                    </div>
+                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                        </div><span data-pgc-field="ct.positionName">Position Title</span>
+                    </div>
+                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
+                        </div><span data-pgc-field="ct.positionName">Position Title</span>
+                    </div>
                 </div>
-                <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                    </div><span data-pgc-field="ct.positionName">Position Title</span>
-                </div>
-                <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                    </div><span data-pgc-field="ct.positionName">Position Title</span>
-                </div>
-                <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                    </div><span data-pgc-field="ct.positionName">Position Title</span>
-                </div>
-                <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                    <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                    </div><span data-pgc-field="ct.positionName">Position Title</span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <script src="../lib/js/jquery-min.js"></script>
         <script src="../pgia/lib/pgia.js"></script>
     </body>

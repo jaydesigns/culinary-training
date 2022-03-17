@@ -310,11 +310,12 @@ button {
 
 @media (min-width:768px) {
     .sectionTitle {
-        font-size: 4.5vw;
+        font-size: 10.9vw;
+        width: 50vw;
     }
 
     .heroTitle {
-        font-size: 10vw;
+        font-size: 20vw;
     }
 }
 
@@ -347,13 +348,6 @@ button {
     color: var(--offwhite);
 }
 
-@media (min-width:1280px) {
-    .keyResultCard {
-        width: 23vw;
-        height: 33vw;
-    }
-}
-
 .deptLinks {
     font-size: 12vw;
     line-height: 1em;
@@ -364,10 +358,15 @@ button {
 
 #section-02 {
     background-color: var(--orange);
+    background-image: url('../assets/img/mvdDSLKe204MDf-hale-ohana.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 #section-03 {
-    background-color: var(--offwhite);
+    background-color: var(--beach);
+    position: relative;
 }
 
 @media (min-width:768px) {
@@ -424,7 +423,7 @@ p {
 }
 
 #culturalBeliefs {
-    background: var(--ocean);
+    background: var(--redorange);
 }
 
 .downArrow {
@@ -473,21 +472,22 @@ p {
 
 .choices {
     padding: 10px 20px;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 15px;
     font-size: 5.5vw;
     font-family: 'League Spartan', sans-serif;
+    color: #ffffff;
+    border-radius: 15px;
 }
 
 @media (min-width:768px) {
     .choices {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .culturalBelief {
-        font-size: 3.4vw;
+        font-size: 6.1vw;
     }
 }
 
@@ -496,19 +496,21 @@ p {
 }
 
 .deptCard {
-    width: 40vw;
-    height: 50vw;
+    width: 26vw;
+    height: 35vw;
     padding: 10px;
-    border-radius: 10px;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 5vw;
+    font-family: Tropiline;
+    font-size: 3.2vw;
     font-weight: 800;
+    border-radius: 30px;
+    font-style: italic;
+    position: relative;
 }
 
 @media (min-width:768px) {
     .deptCard {
-        height: 30vw;
-        width: 21vw;
+        height: 40vw;
+        width: 27vw;
         font-size: 3.1vw;
     }
 }
@@ -525,7 +527,7 @@ p {
 }
 
 .positionCardImg {
-    background-color: var(--surf);
+    background-color: var(--lightgreen);
     background-size: cover;
     background-position: center center;
 }
@@ -550,7 +552,7 @@ p {
 
 @media (min-width:1280px) {
     .positionContainer {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -583,9 +585,140 @@ p {
 #leaf-03 {
     position: absolute;
     right: 0;
+    overflow: hidden;
+    top: 0;
 }
 
 .leaf03 {
     width: 100vw;
     height: 100vw;
+    position: relative;
+    top: -20vh;
+}
+
+.dept-icon {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.navTree {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    font-size: 0.85em;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.navTree:active {
+    color: white;
+    background-color: black;
+}
+
+.current {
+    background-color: black;
+    color: white;
+}
+
+.dept-page-icon {
+    height: 50vw;
+    border-radius: 30px;
+    background-color: var(--orange);
+    width: 50vw;
+    position: relative;
+}
+
+.departmentName {
+    font-size: 10vw;
+    line-height: 1.2em;
+    font-weight: 800;
+}
+
+.deptHeroIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.deptAnchor {
+    padding-top: 10px;
+    font-size: 0.85em;
+}
+
+@media (min-width:1280px) {
+    .departmentName {
+        font-size: 3vw;
+    }
+
+    .dept-page-icon {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media (min-width:768px) {
+    .leaf02 {
+        height: 80vw;
+    }
+
+    .leaf01 {
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .keyResultCard {
+        width: 60vw;
+        height: 80vw;
+    }
+}
+
+@media (min-width:1280px) {
+    .leaf02 {
+        height: 40vw;
+    }
+
+    .leaf01 {
+        height: 40vw;
+    }
+
+    .heroTitle {
+        font-size: 15vw;
+    }
+
+    .sectionTitle {
+        font-size: 6vw;
+    }
+
+    .keyResultCard {
+        width: 25vw;
+        height: 35vw;
+    }
+
+    .culturalBelief {
+        font-size: 2.1vw;
+    }
+
+    .choices {
+        font-size: 3vw;
+    }
+
+    .deptCard {
+        width: 20vw;
+        height: 20vw;
+        font-size: 2.3vw;
+    }
+}
+
+#scroll-lottie {
+    height: 80px;
+}
+
+@media (min-width:768px) {
+    .leaf03 {
+        height: 30vw;
+    }
 }
