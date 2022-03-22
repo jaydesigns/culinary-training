@@ -1,7 +1,7 @@
 :root {
     --green: #868132;
     --lightgreen: #ACA563;
-    --orange: #EAA122;
+    --orange: #FBCC54;
     --redorange: #D27328;
     --ocean: #006872;
     --beach: #31778A;
@@ -129,6 +129,11 @@ h6 {
 
 .taskListCard {
     opacity: 1;
+    border-radius: 15px;
+    border: solid 1px var(--green);
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: var(--offwhite);
 }
 
 button {
@@ -193,7 +198,7 @@ button {
 }
 
 .heroTitle {
-    font-size: 18vw;
+    font-size: 22vw;
     font-weight: 800;
     line-height: 0.8em;
 }
@@ -311,7 +316,6 @@ button {
 @media (min-width:768px) {
     .sectionTitle {
         font-size: 10.9vw;
-        width: 50vw;
     }
 
     .heroTitle {
@@ -496,20 +500,22 @@ p {
 }
 
 .deptCard {
-    width: 26vw;
-    height: 35vw;
+    width: 42vw;
+    height: 42vw;
     padding: 10px;
     font-family: Tropiline;
     font-size: 3.2vw;
     font-weight: 800;
-    border-radius: 30px;
+    border-radius: 20px;
     font-style: italic;
     position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 @media (min-width:768px) {
     .deptCard {
-        height: 40vw;
+        height: 27vw;
         width: 27vw;
         font-size: 3.1vw;
     }
@@ -523,6 +529,7 @@ p {
 @media (min-width:768px) {
     .positionCard {
         margin-right: 30px;
+        height: 35vh;
     }
 }
 
@@ -546,7 +553,7 @@ p {
 
 @media (min-width:768px) {
     .positionContainer {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -621,6 +628,10 @@ p {
 .current {
     background-color: black;
     color: white;
+    padding: 5px 16px 5px 15px;
+    margin-right: 10px;
+    font-size: 0.85em;
+    border-radius: 20px;
 }
 
 .dept-page-icon {
@@ -645,8 +656,10 @@ p {
 }
 
 .deptAnchor {
-    padding-top: 10px;
-    font-size: 0.85em;
+    font-size: 0.75em;
+    font-weight: 800;
+    padding: 5px 10px;
+    margin-right: 5px;
 }
 
 @media (min-width:1280px) {
@@ -671,8 +684,8 @@ p {
     }
 
     .keyResultCard {
-        width: 60vw;
-        height: 80vw;
+        width: 50vw;
+        height: 70vw;
     }
 }
 
@@ -690,12 +703,14 @@ p {
     }
 
     .sectionTitle {
-        font-size: 6vw;
+        font-size: 5.9vw;
+        width: 50vw;
+        line-height: 0.4em;
     }
 
     .keyResultCard {
-        width: 25vw;
-        height: 35vw;
+        width: 20vw;
+        height: 30vw;
     }
 
     .culturalBelief {
@@ -703,7 +718,7 @@ p {
     }
 
     .choices {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .deptCard {
@@ -714,11 +729,79 @@ p {
 }
 
 #scroll-lottie {
-    height: 80px;
+    height: 50px;
 }
 
 @media (min-width:768px) {
     .leaf03 {
-        height: 30vw;
+        height: 60vw;
     }
+}
+
+.square-vid {
+    height: 41vh;
+    background-color: var(--lightgreen);
+}
+
+.noteCard {
+    background-color: var(--lightgreen);
+}
+
+@media (min-width:768px) {
+    .dept-page-icon {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .departmentName {
+        font-size: 3.7vw;
+    }
+}
+
+.lottie-scroll-down {
+    height: 50px;
+}
+
+.icon-leaves {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.continueBtn {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rotateText {
+    position: absolute;
+    left: -21px;
+    top: -15px;
+    animation-name: rotateSVG;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.continueAnchor {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.continueBtn > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
 }

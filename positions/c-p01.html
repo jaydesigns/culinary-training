@@ -1,52 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-pgc-set-master>
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title>New page</title>
+        <script src="../lib/js/department.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"/>
         <link href="../lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div class="xl:flex">
-            <section class="h-screen overflow-hidden relative xl:flex-1">
-                <div class="h-screen overflow-hidden relative w-full">
-                    <video src="../lib/assets/vid/welcome-video.mp4" class="absolute bg-black h-full w-full welcome-vid" preload="auto" muted="true" loop="true">Your browser doesn't support HTML5 video tag.</video>
+    <body style="background-color: var(--offwhite);">
+        <span class="fixed navBox right-6 top-10 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
+        <div class="mt-20 p-6 xl:flex">
+            <section class="cardContainer" data-pgc-edit="ct.CardContainer" data-pg-ia-scene='{"pin":"true","s":"onEnter"}'>
+                <div class="flex flex-wrap"><a href="" class="deptAnchor">Departments</a>
+                    <a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Concessions</a><a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Runner</a>
                 </div>
-            </section>
-            <section class="cardContainer">
-                <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="taskItemCard" data-pgc-define-name="Task Item Card" data-pgc-section="Card Components" data-pgc-edit="cardTitle" data-pgc-edit-types="taskItemCard">
+                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="taskItemCard" data-pgc-define-name="Task Item Card" data-pgc-section="Card Components">
+                    <div class="relative square-vid" data-pgc-edit="taskCardMedia"></div>
                     <div class="flex p-6">
-                        <div class="flex-1 p-2">
-                            <img src="https://pinegrow.com/placeholders/img19.jpg"/>
-                        </div>
-                        <div class="flex-1 p-2">
-                            <h1 class="font-bold mb-0 text-lg">Task 1</h1>
-                            <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
-                            <button id="startTrVid" class="bg-black mb-0 px-6 py-2 rounded-md text-white">Watch Video</button>
-                        </div>
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox"/>
-                                <span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.TaskChecked"/><span class="checkMark"></span>
                             </label>
+                        </div>
+                        <div class="flex-1 p-2">
+                            <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.TaskCardTitle">Video</h1>
+                            <p class="mb-0 text-xs" data-pgc-edit="ct.TaskCardDesc">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-md mx-auto taskListCard" data-pgc="taskItemCard" data-pgc-field="cardTitle" data-pgc-no-update>
-                    <div class="flex p-6">
+                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="ct.actionCard" data-pgc-define-name="Action Card" data-pgc-section="Card Components" data-pgc-edit="ct.AssessmentCardEdit">
+                    <div class="flex p-6" data-pgc-edit="ct.ActionCard">
+                        <div class="p-2">
+                            <label class="checkmarkContainer">
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.ActionCardCheck[checked]"/>
+                                <span class="checkMark"></span>
+                            </label>
+                        </div>
                         <div class="flex-1 p-2">
-                            <img src="https://pinegrow.com/placeholders/img19.jpg"/>
+                            <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.ActionTitle">Task 1</h1>
+                            <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-md mx-auto noteCard taskListCard unassignedCard" data-pgc-define="ct.ReminderCard" data-pgc-section="Card Components" data-pgc-define-name="Reminder Card">
+                    <div class="flex p-6">
+                        <div class="p-2">
+                            <label class="checkmarkContainer">
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.ReminderCheck[checked]"/>
+                                <span class="checkMark"></span>
+                            </label>
+                        </div>
+                        <div class="flex-1 p-2">
+                            <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.ReminderTitle">Task 1</h1>
+                            <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="ct.EventCard" data-pgc-define-name="Event Card" data-pgc-section="Card Components">
+                    <div class="flex p-6">
+                        <div class="p-2">
+                            <label class="checkmarkContainer">
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.EventChecked[checked]"/>
+                                <span class="checkMark"></span>
+                            </label>
+                        </div>
+                        <div class="flex-1 p-2">
+                            <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.EventTitle">Task 1</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-md mx-auto taskListCard" data-pgc-define="ct.AssessmentCard" data-pgc-define-name="Assessment Card" data-pgc-section="Card Components">
+                    <div class="flex p-6">
+                        <div class="p-2">
+                            <label class="checkmarkContainer">
+                                <input type="checkbox" class="adCheckBox checkBox" data-pgc-edit="ct.AssessmentCheckBox[checked]"/>
+                                <span class="checkMark"></span>
+                            </label>
                         </div>
                         <div class="flex-1 p-2">
                             <h1 class="font-bold mb-0 text-lg">Assesment</h1>
                             <p class="mb-0 text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
                             <button class="expandButton mb-0">+</button>
-                        </div>
-                        <div class="p-2">
-                            <label class="checkmarkContainer">
-                                <input type="checkbox" class="adCheckBox checkBox"/><span class="checkMark"></span>
-                            </label>
                         </div>
                     </div>
                     <div class="assessmentDiv p-6">
@@ -56,22 +91,6 @@
                         <div>
                             <button class="circleButton" value="1" type="button">True</button>
                             <button class="circleButton" value="0" type="button">False</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white border-b border-gray-400 border-solid flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="taskItemCard" data-pgc-field="cardTitle" data-pgc-no-update>
-                    <div class="flex p-6">
-                        <div class="flex-1 p-2">
-                            <img src="https://pinegrow.com/placeholders/img19.jpg"/>
-                        </div>
-                        <div class="flex-1 p-2">
-                            <h1 class="font-bold text-lg">Task 1</h1>
-                            <p class="text-xs">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
-                        </div>
-                        <div class="p-2">
-                            <label class="checkmarkContainer">
-                                <input type="checkbox" class="adCheckBox checkBox uaCheckBox"/><span class="checkMark"></span>
-                            </label>
                         </div>
                     </div>
                 </div>
@@ -89,6 +108,6 @@
         </div>
         <script src="../pgia/lib/pgia.js"></script>
         <script src="../lib/js/jquery-min.js"></script>
-        <script src="../lib/js/pages.js"></script>
+        <script type="module" src="../lib/js/pages.js"></script>
     </body>
 </html>

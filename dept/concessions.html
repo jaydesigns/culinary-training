@@ -19,7 +19,7 @@
             </div>
         </nav>
         <span class="fixed navBox right-6 top-10 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
-        <div class="xl:grid xl:grid-cols-3">
+        <div class="md:grid md:grid-cols-3">
             <section class="p-6 sectionWrapper xl:col-span-1 xl:h-screen xl:p-12">
                 <div class="mt-20">
                     <div class="flex flex-wrap"><a href="" class="deptAnchor">Departments</a>
@@ -35,18 +35,18 @@
                         </div>
                         <div class="mt-6">
                             <h1 class="departmentName" data-pgc-field="ct.deptTitle">Concessions</h1>
-                            <p class="mt-6 text-justify">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                            <p class="mt-6 text-justify" data-pgc-field="ct.deptDesc">The Concessions of the Polynesian Cultural Center is in charge of delivering world-class snacks and beverages to guests everyday as they walk around the villages.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="p-6 sectionWrapper xl:col-span-2 xl:h-screen xl:p-12">
+            <section class="p-6 sectionWrapper md:col-span-2 xl:col-span-2 xl:h-screen xl:p-12">
                 <div>
-                    <h6 class="font-semibold mt-6 py-2 xl:mt-20">Positions</h6>
+                    <h6 class="font-semibold mt-6 py-2 md:mt-20 xl:mt-20">Positions</h6>
                 </div>
                 <div class="mt-6 positionContainer xl:mt-10" data-pgc-field="ct.positionContainer">
                     <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg" style="background-image:url('../lib/assets/img/results.jpg');"><a href="../positions/c-p01.html" class="absolute inset-0 z-10"></a>
+                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg" style="background-image:url('../lib/assets/img/results.jpg');"><a href="../positions/position-desc.html" class="absolute inset-0 z-10"></a>
                         </div>
                         <span data-pgc-field="ct.positionName">Cashier</span>
                     </div>
@@ -54,7 +54,7 @@
                         <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg" style="background-image:url('../lib/assets/img/learning.jpg');">
                             <a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
                         </div>
-                        <span data-pgc-field="ct.positionName">Expo</span>
+                        <span data-pgc-field="ct.positionName">Food Prep</span>
                     </div>
                     <div class="inline-block positionCard" data-pgc="ct.positionCard">
                         <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg" style="background-image:url('../lib/assets/img/legacy.jpg');"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
@@ -66,15 +66,11 @@
                         </div>
                         <span data-pgc-field="ct.positionName">Runner</span>
                     </div>
-                    <div class="inline-block positionCard" data-pgc="ct.positionCard">
-                        <div class="h-5/6 overflow-hidden positionCardImg relative rounded-md" data-pgc-field="ct.positionImg" style="background-image:url('../lib/assets/img/spirit.jpg');"><a href="" class="absolute inset-0 z-10" data-pgc-field="ct.positionLink"></a>
-                        </div>
-                        <span data-pgc-field="ct.positionName">Supervisor</span>
-                    </div>
                 </div>
             </section>
         </div>
         <script src="../lib/js/jquery-min.js"></script>
         <script src="../pgia/lib/pgia.js"></script>
+        <script src="../lib/js/department.js"></script>
     </body>
 </html>
