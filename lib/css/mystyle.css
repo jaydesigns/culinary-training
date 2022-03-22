@@ -221,7 +221,7 @@ button {
 }
 
 #preloaderDiv {
-    background-color: rgba(134, 129, 50, 0.92);
+    background-color: var(--green);
 }
 
 #afterVidBtn {
@@ -487,7 +487,7 @@ p {
 
 @media (min-width:768px) {
     .choices {
-        font-size: 4vw;
+        font-size: 1.5em;
     }
 
     .culturalBelief {
@@ -500,8 +500,8 @@ p {
 }
 
 .deptCard {
-    width: 42vw;
-    height: 42vw;
+    width: 40vw;
+    height: 40vw;
     padding: 10px;
     font-family: Tropiline;
     font-size: 3.2vw;
@@ -511,6 +511,7 @@ p {
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 
 @media (min-width:768px) {
@@ -778,6 +779,7 @@ p {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 80px;
 }
 
 .rotateText {
@@ -804,4 +806,27 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+@media (min-width:1280px) {
+    #departmentSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.positionWrapper {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .square-vid {
+        height: 90vw;
+    }
+}
+
+@media (min-width:1280px) {
+    .square-vid {
+        height: 60vw;
+    }
 }

@@ -9,13 +9,22 @@
         <link href="../lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="background-color: var(--offwhite);">
-        <span class="fixed navBox right-6 top-10 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
-        <div class="mt-20 p-6 xl:flex">
-            <section class="cardContainer" data-pgc-field="ct.CardContainer">
-                <div class="flex flex-wrap"><a href="" class="deptAnchor">Departments</a>
+        <span class="fixed navBox right-6 top-4 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
+        <div class="p-6 xl:gap-10 xl:grid xl:grid-cols-3">
+            <div>
+                <div class="flex flex-wrap"><a href="" class="deptAnchor">BACK</a>
                     <a href="" class="current navTree" data-pgc-field="ct.deptTitle">Concessions</a><a href="" class="current navTree" data-pgc-field="ct.deptTitle">Runner</a>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
+                <div class="mt-6">
+                    <div class="dept-page-icon pg-empty-placeholder" data-pgc-field="ct.deptHeroIcon"></div>
+                    <div class="mt-6">
+                        <h1 class="departmentName" data-pgc-field="ct.deptTitle">Position</h1>
+                        <p class="mt-6 text-justify" data-pgc-field="ct.deptDesc">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="cardContainer py-10 xl:col-span-2 xl:pt-16" data-pgc-field="ct.CardContainer">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
                     <div class="relative square-vid" data-pgc-field="taskCardMedia">
                         <video src="../lib/assets/vid/intro-01-loto.mp4" muted="true" controls>Your browser doesn't support HTML5 video tag.</video>
                     </div>
@@ -32,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard" data-pgc="ct.AssessmentCard">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard" data-pgc="ct.AssessmentCard">
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -55,8 +64,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
-                    <div class="relative square-vid" data-pgc-field="taskCardMedia"></div>
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
+                    <div class="relative square-vid" data-pgc-field="taskCardMedia">
+                        <video src="../lib/assets/vid/PXL_20220319_020149289-sq.mp4" controls>Your browser doesn't support HTML5 video tag.</video>
+                    </div>
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -70,8 +81,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
-                    <div class="relative square-vid" data-pgc-field="taskCardMedia"></div>
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
+                    <div class="relative square-vid" data-pgc-field="taskCardMedia">
+                        <video src="../lib/assets/vid/PXL_20220319_462342345-sq.mp4" controls>Your browser doesn't support HTML5 video tag.</video>
+                    </div>
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -85,8 +98,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
-                    <div class="relative square-vid" data-pgc-field="taskCardMedia"></div>
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="taskItemCard">
+                    <div class="relative square-vid" data-pgc-field="taskCardMedia">
+                        <video controls src="../lib/assets/vid/PXL_20220319_0w4532346-sq.mp4">Your browser doesn't support HTML5 video tag.</video>
+                    </div>
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -100,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="ct.actionCard" data-pgc-field="ct.AssessmentCardEdit">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="ct.actionCard" data-pgc-field="ct.AssessmentCardEdit">
                     <div class="flex p-6" data-pgc-field="ct.ActionCard">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -113,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto noteCard taskListCard unassignedCard" data-pgc="ct.ReminderCard">
+                <div class="flex flex-col max-w-3xl mx-auto noteCard taskListCard unassignedCard" data-pgc="ct.ReminderCard">
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -126,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc="ct.EventCard">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc="ct.EventCard">
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">

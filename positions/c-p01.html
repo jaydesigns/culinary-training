@@ -9,13 +9,22 @@
         <link href="../lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="background-color: var(--offwhite);">
-        <span class="fixed navBox right-6 top-10 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
-        <div class="mt-20 p-6 xl:flex">
-            <section class="cardContainer" data-pgc-edit="ct.CardContainer" data-pg-ia-scene='{"pin":"true","s":"onEnter"}'>
-                <div class="flex flex-wrap"><a href="" class="deptAnchor">Departments</a>
-                    <a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Concessions</a><a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Runner</a>
+        <span class="fixed navBox right-6 top-4 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
+        <div class="p-6 xl:gap-10 xl:grid xl:grid-cols-3">
+            <div>
+                <div class="flex flex-wrap"><a href="" class="deptAnchor">BACK</a>
+                    <a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Department</a><a href="" class="current navTree" data-pgc-edit="ct.deptTitle">Position</a>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="taskItemCard" data-pgc-define-name="Task Item Card" data-pgc-section="Card Components">
+                <div class="mt-6">
+                    <div class="dept-page-icon pg-empty-placeholder" data-pgc-edit="ct.deptHeroIcon[style]"></div>
+                    <div class="mt-6">
+                        <h1 class="departmentName" data-pgc-edit="ct.deptTitle">Department Name</h1>
+                        <p class="mt-6 text-justify" data-pgc-edit="ct.deptDesc">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="cardContainer py-10 xl:col-span-2 xl:pt-16" data-pgc-edit="ct.CardContainer">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="taskItemCard" data-pgc-define-name="Task Item Card" data-pgc-section="Card Components">
                     <div class="relative square-vid" data-pgc-edit="taskCardMedia"></div>
                     <div class="flex p-6">
                         <div class="p-2">
@@ -29,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="ct.actionCard" data-pgc-define-name="Action Card" data-pgc-section="Card Components" data-pgc-edit="ct.AssessmentCardEdit">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="ct.actionCard" data-pgc-define-name="Action Card" data-pgc-section="Card Components" data-pgc-edit="ct.AssessmentCardEdit">
                     <div class="flex p-6" data-pgc-edit="ct.ActionCard">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -43,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto noteCard taskListCard unassignedCard" data-pgc-define="ct.ReminderCard" data-pgc-section="Card Components" data-pgc-define-name="Reminder Card">
+                <div class="flex flex-col max-w-3xl mx-auto noteCard taskListCard unassignedCard" data-pgc-define="ct.ReminderCard" data-pgc-section="Card Components" data-pgc-define-name="Reminder Card">
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -57,7 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard unassignedCard" data-pgc-define="ct.EventCard" data-pgc-define-name="Event Card" data-pgc-section="Card Components">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="ct.EventCard" data-pgc-define-name="Event Card" data-pgc-section="Card Components">
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
@@ -70,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col max-w-md mx-auto taskListCard" data-pgc-define="ct.AssessmentCard" data-pgc-define-name="Assessment Card" data-pgc-section="Card Components">
+                <div class="flex flex-col max-w-3xl mx-auto taskListCard" data-pgc-define="ct.AssessmentCard" data-pgc-define-name="Assessment Card" data-pgc-section="Card Components">
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
