@@ -198,7 +198,7 @@ button {
 }
 
 .heroTitle {
-    font-size: 22vw;
+    font-size: 19vw;
     font-weight: 800;
     line-height: 0.8em;
 }
@@ -335,9 +335,6 @@ button {
     top: 1.5em;
 }
 
-.galleryBox {
-}
-
 .keyResultCard {
     padding: 30px;
     height: 100vw;
@@ -350,6 +347,8 @@ button {
     background-position: center center;
     font-family: 'League Spartan', sans-serif;
     color: var(--offwhite);
+    transform: translateX(15vw);
+    opacity: 0;
 }
 
 .deptLinks {
@@ -363,9 +362,6 @@ button {
 #section-02 {
     background-color: var(--orange);
     background-image: url('../assets/img/mvdDSLKe204MDf-hale-ohana.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
 }
 
 #section-03 {
@@ -380,7 +376,7 @@ button {
 }
 
 #tapToContinue {
-    position: fixed;
+    position: absolute;
     z-index: 30;
     width: 100px;
     height: 100px;
@@ -507,11 +503,12 @@ p {
     font-size: 3.2vw;
     font-weight: 800;
     border-radius: 20px;
-    font-style: italic;
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    opacity: 1;
+    margin-right: 14px;
 }
 
 @media (min-width:768px) {
@@ -523,7 +520,7 @@ p {
 }
 
 .positionCard {
-    height: 40vw;
+    height: 42vw;
     width: 100%;
 }
 
@@ -816,7 +813,6 @@ p {
 }
 
 .positionWrapper {
-    display: none;
 }
 
 @media (min-width:768px) {
@@ -829,4 +825,45 @@ p {
     .square-vid {
         height: 60vw;
     }
+}
+
+.tNav::-webkit-scrollbar {
+    height: 2px;
+}
+
+/* Track */
+.tNav::-webkit-scrollbar-track {
+    background: rgb(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* Handle */
+.tNav::-webkit-scrollbar-thumb {
+    background: var(--lightgreen);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.tNav::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+}
+
+#deptDesc {
+    font-size: 4.5vw;
+    display: none;
+}
+
+@media (min-width:768px) {
+    #deptDesc {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width:1280px) {
+    #deptDesc {
+    }
+}
+
+#header-section {
+    grid-column: span 3;
 }
