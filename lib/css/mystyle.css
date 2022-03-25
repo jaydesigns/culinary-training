@@ -493,21 +493,22 @@ p {
 
 #departmentSection {
     background-color: var(--offwhite);
+    transition: all 0.5s cubic-bezier(0.74, 0.00, 0.34, 0.97);
 }
 
 .deptCard {
-    width: 40vw;
-    height: 40vw;
+    width: 37vw;
+    height: 37vw;
     padding: 10px;
     font-family: Tropiline;
-    font-size: 3.2vw;
+    font-size: 3.4vw;
     font-weight: 800;
     border-radius: 20px;
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-    opacity: 1;
+    opacity: 0;
     margin-right: 14px;
 }
 
@@ -520,14 +521,14 @@ p {
 }
 
 .positionCard {
-    height: 42vw;
     width: 100%;
+    opacity: 1;
+    cursor: pointer;
 }
 
 @media (min-width:768px) {
     .positionCard {
         margin-right: 30px;
-        height: 35vh;
     }
 }
 
@@ -535,11 +536,11 @@ p {
     background-color: var(--lightgreen);
     background-size: cover;
     background-position: center center;
+    height: 35vw;
 }
 
 @media (min-width:1280px) {
     .positionCard {
-        height: 20vw;
     }
 }
 
@@ -557,7 +558,7 @@ p {
 
 @media (min-width:1280px) {
     .positionContainer {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -697,7 +698,7 @@ p {
     }
 
     .heroTitle {
-        font-size: 15vw;
+        font-size: 13vw;
     }
 
     .sectionTitle {
@@ -720,9 +721,9 @@ p {
     }
 
     .deptCard {
-        width: 20vw;
-        height: 20vw;
-        font-size: 2.3vw;
+        font-size: 1.7vw;
+        width: 15vw;
+        height: 15vw;
     }
 }
 
@@ -807,8 +808,6 @@ p {
 
 @media (min-width:1280px) {
     #departmentSection {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -850,20 +849,44 @@ p {
 
 #deptDesc {
     font-size: 4.5vw;
-    display: none;
+    opacity: 0;
+    transform: translateY(2rem);
 }
 
 @media (min-width:768px) {
     #deptDesc {
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
 }
 
 @media (min-width:1280px) {
     #deptDesc {
+        font-size: 1vw;
     }
 }
 
 #header-section {
     grid-column: span 3;
+}
+
+#middle-container {
+    display: none;
+}
+
+.transition-layer {
+    background-color: var(--offwhite);
+    height: 100vh;
+    width: 0;
+}
+
+@media (min-width:768px) {
+    .positionCardImg {
+        height: 26vw;
+    }
+}
+
+@media (min-width:1280px) {
+    .positionCardImg {
+        height: 14vw;
+    }
 }

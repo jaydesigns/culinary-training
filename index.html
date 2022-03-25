@@ -11,17 +11,12 @@
     </head>
     <body>
         <nav class="fixed inset-0 navigationSection pl-10 pr-6 py-10 z-40" data-pgc="ct.navigation">
-            <div class="flex flex-col mt-20 text-right"><a href="">Culinary Services</a>
+            <div class="flex flex-col mt-20 text-right">
+                <a href="">Culinary Services</a>
             </div>
-            <div class="flex flex-col mt-14 text-right">
-                <a href="dept/concessions.html" class="deptLinks">Concessions</a>
-                <a href="dept/kitchen.html" class="deptLinks">Kitchen</a>
-                <a href="dept/luau.html" class="deptLinks">Luau</a>
-                <a href="dept/pounders.html" class="deptLinks">Pounders</a>
+            <div class="flex flex-col mt-14 text-right"><a href="dept/concessions.html" class="deptLinks">Concessions</a><a href="dept/kitchen.html" class="deptLinks">Kitchen</a><a href="dept/luau.html" class="deptLinks">Luau</a><a href="dept/pounders.html" class="deptLinks">Pounders</a>
             </div>
-            <div class="flex flex-col mt-14 text-right">
-                <a href="">About</a>
-                <a href="https://polynesia.com">Polynesian Cultural Center</a>
+            <div class="flex flex-col mt-14 text-right"><a href="">About</a><a href="https://polynesia.com">Polynesian Cultural Center</a>
             </div>
         </nav>
         <span class="fixed left-6 navBox top-4 z-50" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
@@ -135,8 +130,8 @@
                 </div>
             </div>
         </section>
-        <section class="h-screen overflow-hidden p-6 xl:p-12" id="culturalBeliefs">
-            <div class="galleryContainer mb-6 mt-24 overflow-x-scroll xl:mt-10" data-pg-ia-scene='{"s":"onCenter","l":[{"p":"time","a":{"l":[{"t":"$.keyResultCard","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0}},{"t":"set","p":0,"d":0,"l":{"x":"10vw"}},{"t":"tween","p":1,"d":1,"s":0.15,"l":{"autoAlpha":1}},{"t":"tween","p":1,"d":1,"s":0.15,"l":{"x":"0vw"},"e":"Cubic.easeOut"}]}]}}]}'>
+        <section class="h-screen overflow-hidden p-6 xl:p-12" id="culturalBeliefs" data-pg-ia-scene='{"s":"onCenter","l":[{"a":{"l":[{"t":"$.keyResultCard","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0}},{"t":"set","p":0,"d":0,"l":{"x":"10vw"}},{"t":"tween","p":1,"d":1,"s":0.15,"l":{"autoAlpha":1}},{"t":"tween","p":1,"d":1,"s":0.15,"l":{"x":"0vw"},"e":"Cubic.easeOut"}]}]},"p":"time"}]}'>
+            <div class="galleryContainer mb-6 mt-24 overflow-x-scroll xl:mt-10">
                 <div class="galleryBox inline-flex">
                     <div class="bg-pink-400 keyResultCard" style="background-image: url('lib/assets/img/spirit.jpg');"><span class="culturalBelief">Radiate Spirit</span>
                     </div>
@@ -178,7 +173,7 @@
                         <button class="choices" data-value-key="correct">Improve Financial Results</button>
                     </div>
                 </div>
-                <div class="continueBtn">
+                <div class="continueBtn" id="trAnchor" data-ref-loc="training/index.html">
                     <svg width="143" height="139" viewBox="0 0 143 139" fill="none" xmlns="http://www.w3.org/2000/svg" class="rotateText">
                         <path d="M138.71 81.7903C139.381 81.7648 140.241 81.6671 140.896 81.622C141.55 81.5948 141.792 81.3289 141.851 80.7197L142.74 71.5286C142.799 70.9194 142.61 70.6299 141.975 70.46C141.341 70.2902 140.514 70.0475 139.862 69.8759C139.403 69.7592 139.138 69.8783 139.102 70.2545C139.034 70.9532 139.718 71.363 140.244 71.7212C140.653 71.9778 141.331 72.2604 141.229 73.3175L141.222 73.3891C141.182 73.8012 141.075 73.9717 140.764 74.0139C140.563 74.0307 140.348 74.0099 140.008 73.977L132.411 73.2424C131.694 73.1731 131.463 73.1327 131.145 72.8668C130.696 72.4617 130.653 72.349 130.418 72.3444C130.128 72.3525 129.985 72.5196 129.946 72.9317C129.944 72.9496 129.564 76.8733 129.563 76.8912C129.523 77.3033 129.629 77.5125 129.914 77.5581C130.145 77.5986 130.209 77.4962 130.726 77.2026C131.091 76.9847 131.325 76.9893 132.042 77.0586L139.639 77.7932C139.979 77.8261 140.192 77.8648 140.388 77.9018C140.685 78.0029 140.758 78.1907 140.716 78.6207L140.709 78.6924C140.607 79.7495 139.887 79.8969 139.437 80.0703C138.853 80.3033 138.104 80.5744 138.036 81.2731C138 81.6494 138.235 81.8349 138.71 81.7903Z" fill="white"/>
                         <path d="M127.804 89.7975C128.197 89.6656 128.427 89.712 129.085 89.8984C129.622 90.0505 130.159 90.2026 130.419 90.2761L131.735 90.6489C134.263 91.3651 135.803 90.024 136.475 87.6513C137.211 85.0535 136.104 83.1497 134.765 83.6498C134.053 83.916 133.673 85.0616 134.223 85.7601C134.61 86.2438 135.506 86.5162 135.1 87.3553C134.819 87.9493 133.881 87.6276 132.825 87.3283L132.427 87.2155C132.323 87.1861 132.322 87.0551 132.411 87.0054C134.278 85.8316 134.235 82.1527 131.741 81.4463C130.061 80.9705 128.592 81.995 128.062 83.8654C127.925 84.3503 127.838 85.1862 128.146 85.816C128.196 85.9049 128.149 86.0039 128.045 85.9745C127.667 85.9234 127.444 86.0475 127.317 86.4978C127.135 87.1386 126.715 89.2832 126.715 89.2832C126.622 89.7433 126.669 89.9064 126.942 90.0022C127.162 90.0833 127.243 89.9941 127.804 89.7975ZM128.832 85.3743C128.903 84.7956 129.752 84.4376 130.722 84.5813C131.679 84.7027 132.417 85.2672 132.33 85.841C132.259 86.4198 131.405 86.7951 130.435 86.6514C129.478 86.53 128.745 85.9481 128.832 85.3743Z" fill="white"/>
@@ -215,10 +210,11 @@
                         <path d="M127.975 49.5992C128.193 49.2472 128.4 49.1364 129.026 48.8605C129.537 48.6355 134 46.6685 134 46.6685C134.659 46.3781 135.194 46.1623 134.431 45.279C134.431 45.279 133.258 43.868 132.775 43.3529C132.46 43.0394 132.293 42.8378 131.965 42.9428C131.751 43.0372 131.745 43.1578 131.438 43.6667C131.22 44.0188 130.519 44.3473 129.86 44.6377L128.196 45.3708C127.208 45.8063 126.328 45.5056 126.001 44.7644C125.537 43.7102 126.94 43.1901 128.044 42.7038L131.569 41.1505C132.228 40.8601 132.769 40.6608 132.006 39.7775C132.006 39.7775 130.826 38.35 130.351 37.8514C130.036 37.5379 129.868 37.3363 129.541 37.4413C129.319 37.5192 129.314 37.6398 129.014 38.1652C128.795 38.5172 128.094 38.8458 127.436 39.1362C127.436 39.1362 125.574 39.9564 125.475 39.9999C124.207 40.5589 123.144 42.0304 124.095 44.1882C124.502 45.1106 125.251 45.7837 125.975 46.1332C126.125 46.205 126.121 46.2854 125.989 46.3435C125.509 46.5942 125.271 46.8566 125.496 47.3672C125.765 47.9766 126.808 49.8971 126.808 49.8971C127.029 50.3109 127.17 50.4063 127.441 50.3067C127.662 50.2288 127.668 50.1082 127.975 49.5992Z" fill="white"/>
                         <path d="M132.006 58.4345C132.133 58.1992 132.126 57.8674 131.625 57.4904C131.259 57.2098 130.684 56.6841 130.507 55.9676C130.279 55.0414 130.486 54.3042 131.204 53.6822C131.406 53.5213 131.65 53.4609 131.75 53.7145C131.75 53.7145 132.752 55.8218 133.038 56.3815C133.563 57.3829 134.068 58.0001 134.994 57.7716C136.196 57.4566 137.581 55.706 136.947 53.137C136.313 50.568 133.847 48.9886 131.348 49.6051C128.43 50.325 127.612 53.4003 128.168 55.6547C128.884 58.5557 131.667 59.1669 132.006 58.4345ZM133.177 52.5838C134.602 52.047 135.242 52.3895 135.476 52.9621C135.801 53.7533 135.14 54.4541 134.37 54.7922C134.187 54.8746 133.851 54.8648 133.651 54.432L132.97 53.0983C132.866 52.9016 132.954 52.6574 133.177 52.5838Z" fill="white"/>
                     </svg>
-                    <a href="training/index.html" data-pg-ia='{"l":[{"name":"scrollSection02","trg":"mousedown","a":{"l":[{"t":"$#tapToContinue","l":[{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0},"e":"Power4.easeInOut"},{"t":"tween","p":0.5,"d":0.5,"l":{"display":"none"}}]}]}}]}' class="continueAnchor"></a>
+                    <span class="continueAnchor" data-pg-ia='{"l":[{"name":"trainingIndex","trg":"mousedown","a":{"l":[{"t":"$.mt-32, #section-03 #gt# div:nth-of-type(2) #gt# .mt-6, #keyResultsChoices #gt# div:nth-of-type(1) #gt# button:nth-of-type(1), #keyResultsChoices #gt# div:nth-of-type(1) #gt# button:nth-of-type(2), #keyResultsChoices #gt# div:nth-of-type(2) #gt# button:nth-of-type(1), #keyResultsChoices #gt# div:nth-of-type(2) #gt# button:nth-of-type(2), .continueBtn","l":[{"t":"tween","p":0,"d":0.8,"s":0.15,"l":{"autoAlpha":0},"e":"Power4.easeInOut"},{"t":"tween","p":1,"d":0.5,"l":{"display":"none"}}]},{"t":"$#section-03 #gt# div:nth-of-type(3)","l":[{"t":"tween","p":1.7,"d":0.9,"l":{"width":"100vw"},"e":"Cubic.easeOut"}]}]}}]}'></span>
                     <img src="lib/assets/img/downArrow.svg"/>
                 </div>
             </div>
+            <div class="absolute pg-empty-placeholder right-0 top-0 transition-layer"></div>
         </section>
         <script src="pgia/lib/pgia.js"></script>
         <script src="lib/js/jquery-min.js"></script>

@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"/>
         <link href="../lib/css/mystyle.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body style="background-color: var(--offwhite);">
-        <span class="fixed navBox right-6 top-4 z-20" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
+    <body style="background-color: var(--offwhite);"><span class="fixed left-6 navBox top-4 z-50" data-pgc="ct.nav-button"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
         <div class="p-6 xl:gap-10 xl:grid xl:grid-cols-3">
             <div>
-                <div class="flex flex-wrap"><a href="" class="deptAnchor">BACK</a>
-                    <a href="" class="current navTree" data-pgc-field="ct.deptTitle">Concessions</a><a href="" class="current navTree" data-pgc-field="ct.deptTitle">Runner</a>
+                <div class="flex flex-wrap">
+                    <a href="" class="deptAnchor">BACK</a><a href="" class="current navTree" data-pgc-field="ct.deptTitle">Concessions</a>
+                    <a href="" class="current navTree" data-pgc-field="ct.deptTitle">Runner</a>
                 </div>
                 <div class="mt-6">
                     <div class="dept-page-icon pg-empty-placeholder" data-pgc-field="ct.deptHeroIcon"></div>
@@ -31,8 +31,7 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/>
-                                <span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/><span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -45,7 +44,8 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="adCheckBox checkBox" data-pgc-field="ct.AssessmentCheckBox"/><span class="checkMark"></span>
+                                <input type="checkbox" class="adCheckBox checkBox" data-pgc-field="ct.AssessmentCheckBox"/>
+                                <span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -71,8 +71,7 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/>
-                                <span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/><span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -88,8 +87,7 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/>
-                                <span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/><span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -105,8 +103,7 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/>
-                                <span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.TaskChecked"/><span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -119,7 +116,8 @@
                     <div class="flex p-6" data-pgc-field="ct.ActionCard">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.ActionCardCheck"/><span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.ActionCardCheck"/>
+                                <span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -132,7 +130,8 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.ReminderCheck"/><span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.ReminderCheck"/>
+                                <span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
@@ -145,7 +144,8 @@
                     <div class="flex p-6">
                         <div class="p-2">
                             <label class="checkmarkContainer">
-                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.EventChecked"/><span class="checkMark"></span>
+                                <input type="checkbox" class="checkBox uaCheckBox" data-pgc-field="ct.EventChecked"/>
+                                <span class="checkMark"></span>
                             </label>
                         </div>
                         <div class="flex-1 p-2">
