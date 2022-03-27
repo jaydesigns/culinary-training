@@ -138,9 +138,9 @@ h6 {
 
 button {
     color: #ffffff;
-    background-color: #191919;
+    background-color: var(--ocean);
     padding: 5px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 1em;
     margin-top: 10px;
 }
@@ -161,7 +161,7 @@ button {
     height: 100px;
     border-radius: 50px;
     margin-right: 20px;
-    background-color: #00a0dc;
+    background-color: var(--ocean);
 }
 
 .assessmentDiv {
@@ -176,7 +176,7 @@ button {
 }
 
 .modal {
-    background-color: #000000;
+    background-color: var(--redorange);
     border-radius: 20px;
 }
 
@@ -324,10 +324,12 @@ button {
 }
 
 .navBox {
-    width: 45px;
-    height: 45px;
     overflow: hidden;
     border-radius: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 45px !important;
+    min-height: 45px !important;
 }
 
 .sectionTitleSpan {
@@ -494,6 +496,7 @@ p {
 #departmentSection {
     background-color: var(--offwhite);
     transition: all 0.5s cubic-bezier(0.74, 0.00, 0.34, 0.97);
+    padding-top: 120px;
 }
 
 .deptCard {
@@ -522,7 +525,7 @@ p {
 
 .positionCard {
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     cursor: pointer;
 }
 
@@ -627,10 +630,10 @@ p {
 .current {
     background-color: black;
     color: white;
-    padding: 5px 16px 5px 15px;
+    padding: 11px 20px 5px;
     margin-right: 10px;
     font-size: 0.85em;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .dept-page-icon {
@@ -659,17 +662,6 @@ p {
     font-weight: 800;
     padding: 5px 10px;
     margin-right: 5px;
-}
-
-@media (min-width:1280px) {
-    .departmentName {
-        font-size: 3vw;
-    }
-
-    .dept-page-icon {
-        width: 20vw;
-        height: 20vw;
-    }
 }
 
 @media (min-width:768px) {
@@ -748,8 +740,8 @@ p {
 
 @media (min-width:768px) {
     .dept-page-icon {
-        width: 25vw;
-        height: 25vw;
+        width: 17vw;
+        height: 17vw;
     }
 
     .departmentName {
@@ -816,13 +808,13 @@ p {
 
 @media (min-width:768px) {
     .square-vid {
-        height: 90vw;
+        height: 55vw;
     }
 }
 
 @media (min-width:1280px) {
     .square-vid {
-        height: 60vw;
+        height: 42vw;
     }
 }
 
@@ -866,11 +858,12 @@ p {
 }
 
 #header-section {
-    grid-column: span 3;
+    width: 100%;
 }
 
 #middle-container {
     display: none;
+    width: 100%;
 }
 
 .transition-layer {
@@ -889,4 +882,30 @@ p {
     .positionCardImg {
         height: 14vw;
     }
+}
+
+@media (min-width:768px) {
+    #header-section {
+        width: 100%;
+        float: left;
+        position: fixed;
+    }
+}
+
+.tropiline-txt {
+    font-family: Tropiline;
+    font-weight: 800;
+    word-break: break-all;
+}
+
+@media (min-width:768px) {
+    #middle-container {
+        width: 62%;
+        float: right;
+    }
+}
+
+#moduleWrapper {
+    display: none;
+    opacity: 1;
 }

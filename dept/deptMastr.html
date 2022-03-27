@@ -10,15 +10,12 @@
     </head>
     <body>
         <nav class="fixed inset-0 navigationSection pl-10 pr-6 py-10 z-40" data-pgc-define="ct.navigation" data-pgc-define-name="Navigation" data-pgc-section="UI Components">
-            <div class="flex flex-col mt-20 text-right">
-                <a href="../index.html">Culinary Services</a>
+            <div class="flex flex-col max-w-4xl mt-20 mx-auto text-right"><a href="../index.html" class="deptLinks">Culinary Services</a><a href="../training/index.html" class="deptLinks">Training</a>
             </div>
-            <div class="flex flex-col mt-14 text-right"><a href="concessions.html" class="deptLinks">Concessions</a><a href="kitchen.html" class="deptLinks">Kitchen</a><a href="luau.html" class="deptLinks">Luau</a><a href="pounders.html" class="deptLinks">Pounders</a>
-            </div>
-            <div class="flex flex-col mt-14 text-right"><a href="">About</a><a href="https://polynesia.com">Polynesian Cultural Center</a>
+            <div class="flex flex-col max-w-4xl mt-14 mx-auto text-right"><a href="" class="mt-6">About</a><a href="https://polynesia.com" class="mt-6">Polynesian Cultural Center</a>
             </div>
         </nav>
-        <span class="fixed left-6 navBox top-4 z-50" data-pgc-define="ct.nav-button" data-pgc-define-name="Navigation Button" data-pgc-section="UI Components"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
+        <span class="navBox relative" data-pgc-define="ct.nav-button" data-pgc-define-name="Navigation Button" data-pgc-section="UI Components"><span class="absolute flex navBtnContainer overflow-hidden z-20"><span class="inline-block navOpenBtn relative z-20" data-pg-ia='{"l":[{"name":"navOpenTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":"-50%"},"e":"Power4.easeInOut"}]},{"t":"$.navigationSection","l":[{"t":"set","p":0,"d":0,"l":{"display":"none"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"block"}}]}]}}]}'><span class="upperLine"></span><span class="lowerLine"></span></span><span class="inline-block navCloseBtn relative z-20" data-pg-ia='{"l":[{"name":"navCloseTrigger","trg":"mousedown","a":{"l":[{"t":"$.navBtnContainer","l":[{"t":"tween","p":0,"d":0.5,"l":{"x":0},"e":"Power4.easeInOut"}]},{"t":"$nav","l":[{"t":"set","p":0,"d":0,"l":{"display":"block"}},{"t":"tween","p":0,"d":0.5,"l":{"display":"none"}}]}]}}]}'><span class="x-one"></span><span class="x-two"></span></span></span></span>
         <div>
             <div class="max-w-4xl mx-auto md:grid md:grid-cols-3">
                 <section class="p-6 sectionWrapper xl:col-span-1 xl:h-screen xl:p-12">
@@ -36,18 +33,98 @@
                     </div>
                 </section>
                 <div class="p-6 md:col-span-2">
-                    <div class="sectionWrapper md:col-span-2 xl:col-span-2 xl:h-screen" data-pgc-define="ct.positionContainer" data-pgc-define-name="Position Container" data-pgc-section="Card Components">
-                        <div>
-                            <h6 class="font-semibold mt-6 py-2 md:mt-20 xl:mt-20">Positions</h6>
-                        </div>
-                        <div class="mt-2 positionContainer xl:mt-4" data-pgc-edit="ct.positionContainer[data-department-name, id]">
+                    <div class="sectionWrapper md:col-span-2 xl:col-span-2" data-pgc-define="ct.positionContainer" data-pgc-define-name="Position Container" data-pgc-section="Card Components">
+                        <div class="positionContainer xl:mt-2" data-pgc-edit="ct.positionContainer[data-department-name, id]">
                             <div class="inline-block positionCard" data-pgc-section="Card Components" data-pgc-define-map-urls="false" data-pgc-define-name="Position Card" data-pgc-define="ct.positionCard">
                                 <div class="overflow-hidden positionCardImg relative rounded-2xl" data-pgc-edit="ct.positionImg[style]" data-pgc-edit-bckimage>
                                     <a href="" class="absolute inset-0 z-10" data-pgc-edit="ct.positionLink[href]"></a>
-                                </div><span data-pgc-edit="ct.positionName" class="text-sm">Position Title</span>
+                                </div><span data-pgc-edit="ct.positionName" class="text-base tropiline-txt">Position Title</span>
                             </div>
                         </div>
                     </div>
+                    <section class="cardContainer py-10 xl:col-span-2 xl:pt-16" data-pgc-edit="ct.CardContainer">
+                        <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="taskItemCard" data-pgc-define-name="Task Item Card" data-pgc-section="Card Components">
+                            <div class="relative square-vid" data-pgc-edit="taskCardMedia"></div>
+                            <div class="flex p-6">
+                                <div class="p-2">
+                                    <label class="checkmarkContainer">
+                                        <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.TaskChecked"/><span class="checkMark"></span>
+                                    </label>
+                                </div>
+                                <div class="flex-1 p-2">
+                                    <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.TaskCardTitle">Video</h1>
+                                    <p class="mb-0 text-base" data-pgc-edit="ct.TaskCardDesc">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="ct.actionCard" data-pgc-define-name="Action Card" data-pgc-section="Card Components" data-pgc-edit="ct.AssessmentCardEdit">
+                            <div class="flex p-6" data-pgc-edit="ct.ActionCard">
+                                <div class="p-2">
+                                    <label class="checkmarkContainer">
+                                        <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.ActionCardCheck[checked]"/>
+                                        <span class="checkMark"></span>
+                                    </label>
+                                </div>
+                                <div class="flex-1 p-2">
+                                    <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.ActionTitle">Task 1</h1>
+                                    <p class="mb-0 text-base">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col max-w-3xl mx-auto noteCard taskListCard unassignedCard" data-pgc-define="ct.ReminderCard" data-pgc-section="Card Components" data-pgc-define-name="Reminder Card">
+                            <div class="flex p-6">
+                                <div class="p-2">
+                                    <label class="checkmarkContainer">
+                                        <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.ReminderCheck[checked]"/>
+                                        <span class="checkMark"></span>
+                                    </label>
+                                </div>
+                                <div class="flex-1 p-2">
+                                    <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.ReminderTitle">Task 1</h1>
+                                    <p class="mb-0 text-base">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col max-w-3xl mx-auto taskListCard unassignedCard" data-pgc-define="ct.EventCard" data-pgc-define-name="Event Card" data-pgc-section="Card Components">
+                            <div class="flex p-6">
+                                <div class="p-2">
+                                    <label class="checkmarkContainer">
+                                        <input type="checkbox" class="checkBox uaCheckBox" data-pgc-edit="ct.EventChecked[checked]"/>
+                                        <span class="checkMark"></span>
+                                    </label>
+                                </div>
+                                <div class="flex-1 p-2">
+                                    <h1 class="font-bold mb-0 text-lg" data-pgc-edit="ct.EventTitle">Task 1</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col max-w-3xl mx-auto taskListCard" data-pgc-define="ct.AssessmentCard" data-pgc-define-name="Assessment Card" data-pgc-section="Card Components">
+                            <div class="flex p-6">
+                                <div class="p-2">
+                                    <label class="checkmarkContainer">
+                                        <input type="checkbox" class="adCheckBox checkBox" data-pgc-edit="ct.AssessmentCheckBox[checked]"/>
+                                        <span class="checkMark"></span>
+                                    </label>
+                                </div>
+                                <div class="flex-1 p-2">
+                                    <h1 class="font-bold mb-0 text-lg">Assesment</h1>
+                                    <p class="mb-0 text-base">This is a paragraph, one or more lines of text. Each paragraph is displayed in a new line.</p>
+                                    <button class="expandButton mb-0">+</button>
+                                </div>
+                            </div>
+                            <div class="assessmentDiv p-6" data-pgc-edit="ct.questionBox">
+                                <div>
+                                    <p>Is this a question to assess what they&apos;ve learned in their training?</p>
+                                </div>
+                                <div>
+                                    <button class="circleButton" value="1" type="button">True</button>
+                                    <button class="circleButton" value="0" type="button">False</button>
+                                    <button class="circleButton" value="0" type="button">False</button>
+                                    <button class="circleButton" value="0" type="button">False</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
